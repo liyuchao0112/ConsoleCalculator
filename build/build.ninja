@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: ConsoleCalculator
-# Configurations: Debug
+# Configurations: Release
 # =============================================================================
 
 #############################################
@@ -24,7 +24,7 @@ ninja_required_version = 1.5
 #############################################
 # Set configuration variable for custom commands.
 
-CONFIGURATION = Debug
+CONFIGURATION = Release
 # =============================================================================
 # Include auxiliary files.
 
@@ -49,9 +49,9 @@ cmake_ninja_workdir = E$:/Liyuchao/Programs/Cpp/ConsoleCalculator/build/
 
 build cmake_object_order_depends_target_ConsoleCalculator: phony || CMakeFiles/ConsoleCalculator.dir
 
-build CMakeFiles/ConsoleCalculator.dir/Sources/main.cpp.obj: CXX_COMPILER__ConsoleCalculator_Debug E$:/Liyuchao/Programs/Cpp/ConsoleCalculator/Sources/main.cpp || cmake_object_order_depends_target_ConsoleCalculator
+build CMakeFiles/ConsoleCalculator.dir/Sources/main.cpp.obj: CXX_COMPILER__ConsoleCalculator_Release E$:/Liyuchao/Programs/Cpp/ConsoleCalculator/Sources/main.cpp || cmake_object_order_depends_target_ConsoleCalculator
   DEP_FILE = CMakeFiles\ConsoleCalculator.dir\Sources\main.cpp.obj.d
-  FLAGS = -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+  FLAGS = -O3 -DNDEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrt
   OBJECT_DIR = CMakeFiles\ConsoleCalculator.dir
   OBJECT_FILE_DIR = CMakeFiles\ConsoleCalculator.dir\Sources
   TARGET_COMPILE_PDB = CMakeFiles\ConsoleCalculator.dir\
@@ -65,8 +65,8 @@ build CMakeFiles/ConsoleCalculator.dir/Sources/main.cpp.obj: CXX_COMPILER__Conso
 #############################################
 # Link the executable ConsoleCalculator.exe
 
-build ConsoleCalculator.exe: CXX_EXECUTABLE_LINKER__ConsoleCalculator_Debug CMakeFiles/ConsoleCalculator.dir/Sources/main.cpp.obj
-  FLAGS = -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd
+build ConsoleCalculator.exe: CXX_EXECUTABLE_LINKER__ConsoleCalculator_Release CMakeFiles/ConsoleCalculator.dir/Sources/main.cpp.obj
+  FLAGS = -O3 -DNDEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrt
   LINK_FLAGS = -Xlinker /subsystem:console
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames
   OBJECT_DIR = CMakeFiles\ConsoleCalculator.dir

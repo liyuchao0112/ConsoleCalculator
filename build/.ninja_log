@@ -1,4 +1,5 @@
 # ninja log v5
-0	45	6627916949436539	CMakeFiles/ConsoleCalculator.dir/Sources/main.cpp.obj	83620f2955f02ff5
-0	385	6627920584596938	CMakeFiles/ConsoleCalculator.dir/Sources/main.cpp.obj	83620f2955f02ff5
-386	531	6627920585841622	ConsoleCalculator.exe	2494800345d49b13
+1	393	6627923871702583	CMakeFiles/ConsoleCalculator.dir/Sources/main.cpp.obj	84f088e2a5cdd00c
+394	508	6627923872972304	ConsoleCalculator.exe	67020e5662259c1b
+0	382	6627924086246367	CMakeFiles/ConsoleCalculator.dir/Sources/main.cpp.obj	75f07db791a1b5db
+382	487	6627924087396370	ConsoleCalculator.exe	857f75ace1bb3f22
